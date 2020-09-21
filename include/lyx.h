@@ -1,7 +1,11 @@
 #ifndef _LYX_H_
 #define _LYX_H_
 
+#define int8_t	sint8_t
 #include <stdint.h>
+#undef	int8_t
+
+#define int8_t char
 
 #define SM4_BLOCK_SIZE       (16)
 

@@ -37,7 +37,7 @@ static int32_t test_sm4(int32_t argc, int8_t** argv)
 	uint8_t cipher[512];
 	uint8_t buf[512];
 	int32_t len;
-	uint32_t type;
+	uint32_t type = 0;
 	sm4_ctx_t sm4;
 
 	if (argc) {

@@ -44,7 +44,6 @@ obj-y += $(addsuffix /, $(dirs))
 
 all: 
 	@make --no-print-directory -C ./ -f $(TOPDIR)/Makefile.build
-	@echo "   CC     $@.o"
 	@$(CC) $(LDFLAGS) -o $(TARGET) built-in.o
 
 clean:
